@@ -17,7 +17,7 @@ public class Producto {
 	 * @return un double, producto de (num1, num2).
 	 */
 	public double multiplica2reales(double num1, double num2) {
-		return 0;
+		return num1 * num2;
 	}
 
 	/**
@@ -28,7 +28,7 @@ public class Producto {
 	 * @return un integer, producto de (num1, num2).
 	 */
 	public int multiplica2enteros(int num1, int num2) {
-		return 0;// Retornamos cero para que compile.
+		return num1 * num2;
 	}
 
 	/**
@@ -40,18 +40,18 @@ public class Producto {
 	 * @return un double, producto de (num1, num2, num3).
 	 */
 	public double multiplica3reales(double num1, double num2, double num3) {
-		return 0;// Retornamos cero para que compile.
+		return num1 * num2 * num3;
 	}
 
 	/**
-	 * Exponecia un numero en funciun de otro.
+	 * Exponecia un numero en función de otro.
 	 * 
 	 * @param num1 numero real base.
 	 * @param num2 numero real exponente.
 	 * @return un double, resultado de elevar num1 a num2.
 	 */
 	public double potencia(double num1, double num2) {
-		return 0;// Retornamos cero para que compile.
+		return Math.Pow(num1, num2);
 	}
 
 }
