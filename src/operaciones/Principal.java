@@ -199,7 +199,7 @@ public class Principal {
 				double num1Real = entrada.nextDouble();
 				System.out.println("Introduzca segundo digito");
 				double num2Real = entrada.nextDouble();
-				System.out.println("El resultado es: " + Producto.multiplica2Reales(num1Real, num2Real));
+				System.out.println("El resultado es: " + Producto.multiplica2reales(num1Real, num2Real));
 				break;
 
 			// Pasamos dos variables y llamamos al metodo multiplica2enteros de clase
