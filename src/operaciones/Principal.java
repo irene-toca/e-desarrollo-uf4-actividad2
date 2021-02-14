@@ -6,7 +6,7 @@ import java.util.Scanner;
 /**
  * Esta clase es para ejecutar los métodos de las diferentes clases
  *
- * @author rober, Irene, F�lix
+ * @author rober, Irene, F�lix
  ** @version 1.0
  * @since 14-02-2021 .
  */
@@ -26,6 +26,8 @@ public class Principal {
 		double resultado;
 		int solucion;
 		Suma suma1 = new Suma();
+		double num1Real;
+		double num2Real;
 
 		Scanner entrada = new Scanner(System.in);
 		entrada.useLocale(Locale.US);
@@ -40,6 +42,7 @@ public class Principal {
 		switch (operacion) {
 
 		case "suma":
+			// Otro menú para seleccionar las operaciones de la Suma
 			System.out.println("Operación Suma");
 			System.out.println("Pulse 1 para sumar dos números reales ");
 			System.out.println("Pulse 2 para sumar dos números enteros ");
@@ -49,7 +52,7 @@ public class Principal {
 			// Entrada por teclado
 			int operacionSuma = entrada.nextInt();
 
-			// Otro menú para seleccionar las operaciones de la resta
+			// Switch de selección de operaciones en el menú
 			switch (operacionSuma) {
 
 			case 1:
@@ -141,9 +144,9 @@ public class Principal {
 
 			case 1:
 				System.out.println("Introduzca primer digito");
-				double num1Real = entrada.nextDouble();
+				num1Real = entrada.nextDouble();
 				System.out.println("Introduzca segundo digito");
-				double num2Real = entrada.nextDouble();
+				num2Real = entrada.nextDouble();
 				System.out.println("El resultado es: " + Resta.resta2Reales(num1Real, num2Real));
 				break;
 			// Pasamos dos variables y llamamos al metodo resta2Enteros de clase Resta
@@ -178,17 +181,17 @@ public class Principal {
 			}
 
 			break;
-		case "Producto":
+		case "multiplicacion":
 			System.out.println("Operacion Producto");
 			System.out.println("Pulse 1 para multiplicar dos números reales");
 			System.out.println("Pulse 2 para multiplicar dos números enteros");
 			System.out.println("Pulse 3 para multiplicar tres números reales");
-			System.out.println("Pulse 4 para exponenciar el primer n�mero introducido por el segundo");
+			System.out.println("Pulse 4 para exponenciar el primer n�mero introducido por el segundo");
 
 			// Entrada por teclado
 			int operacionProducto = entrada.nextInt();
 
-			// Switch de selecci�n de operaci�n en men�
+			// Switch de selecci�n de operaci�n en men�
 			switch (operacionProducto) {
 
 			// Pasamos dos variables y llamamos al metodo multiplica2Reales de clase
@@ -196,9 +199,9 @@ public class Principal {
 
 			case 1:
 				System.out.println("Introduzca primer digito");
-				double num1Real = entrada.nextDouble();
+				num1Real = entrada.nextDouble();
 				System.out.println("Introduzca segundo digito");
-				double num2Real = entrada.nextDouble();
+				num2Real = entrada.nextDouble();
 				System.out.println("El resultado es: " + Producto.multiplica2reales(num1Real, num2Real));
 				break;
 
@@ -216,9 +219,9 @@ public class Principal {
 			// Producto
 			case 3:
 				System.out.println("Introduzca primer digito");
-				double num1Real = entrada.nextDouble();
+				num1Real = entrada.nextDouble();
 				System.out.println("Introduzca segundo digito");
-				double num2Real = entrada.nextDouble();
+				num2Real = entrada.nextDouble();
 				System.out.println("Introduzca tercer digito");
 				double num3Real = entrada.nextDouble();
 				System.out.println("El resultado es: " + Producto.multiplica3reales(num1Real, num2Real, num3Real));
@@ -227,9 +230,9 @@ public class Principal {
 			// Pasamos dos variables y llamamos al metodo potencia
 			case 4:
 				System.out.println("Introduzca primer digito");
-				double num1Real = entrada.nextDouble();
+				num1Real = entrada.nextDouble();
 				System.out.println("Introduzca segundo digito");
-				double num2Real = entrada.nextDouble();
+				num2Real = entrada.nextDouble();
 				System.out.println("El resultado es: " + Producto.potencia(num1Real, num2Real));
 				break;
 

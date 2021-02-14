@@ -51,7 +51,7 @@ public class Producto {
 	 * @return un double, resultado de elevar num1 a num2.
 	 */
 	public static double potencia(double num1, double num2) {
-		return Math.Pow(num1, num2);
+		return Math.pow(num1, num2);
 	}
 
 }
