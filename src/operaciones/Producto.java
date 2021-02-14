@@ -16,7 +16,7 @@ public class Producto {
 	 * @param num2 numero real 2.
 	 * @return un double, producto de (num1, num2).
 	 */
-	public double multiplica2reales(double num1, double num2) {
+	public static double multiplica2reales(double num1, double num2) {
 		return num1 * num2;
 	}
 
@@ -27,7 +27,7 @@ public class Producto {
 	 * @param num2 entero numero 2.
 	 * @return un integer, producto de (num1, num2).
 	 */
-	public int multiplica2enteros(int num1, int num2) {
+	public static int multiplica2enteros(int num1, int num2) {
 		return num1 * num2;
 	}
 
@@ -39,7 +39,7 @@ public class Producto {
 	 * @param num3 nmero real 3.
 	 * @return un double, producto de (num1, num2, num3).
 	 */
-	public double multiplica3reales(double num1, double num2, double num3) {
+	public static double multiplica3reales(double num1, double num2, double num3) {
 		return num1 * num2 * num3;
 	}
 
@@ -50,7 +50,7 @@ public class Producto {
 	 * @param num2 numero real exponente.
 	 * @return un double, resultado de elevar num1 a num2.
 	 */
-	public double potencia(double num1, double num2) {
+	public static double potencia(double num1, double num2) {
 		return Math.Pow(num1, num2);
 	}
 
