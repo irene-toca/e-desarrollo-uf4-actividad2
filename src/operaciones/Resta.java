@@ -39,11 +39,11 @@ public class Resta {
 	 *
 	 * @param num1      - Valor introducido por el usuario
 	 * @param num2      - Valor introducido por el usuario
-	 * @param resultado - Resultado de restar num1 menos num2
+	 * @return resultado - Resultado de restar num1 menos num2
 	 */
-	public static double resta2Reales(double num1, double num2) {
-
-		return (num1 - num2);
+	public double resta2Reales(double num1, double num2) {
+		resultado = num1- num2;
+		return (resultado);
 	}
 
 	/**

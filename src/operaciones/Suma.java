@@ -8,7 +8,7 @@ package operaciones;
  * Creamos la  clase  Suma 
  * 
  * 
- * declaramos las variavles
+ * declaramos las variables
  * 
  * double resultado  es lo que nos dara al sumar  los dos numeros reales en el primer metodo
  * tambien lo podremos reutilizar para sumar los tres numeros reales en el tercer metodo 
