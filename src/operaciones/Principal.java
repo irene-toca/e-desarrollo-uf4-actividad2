@@ -3,7 +3,7 @@ package operaciones;
 import java.util.Scanner;
 
 /**
- * Esta clase definirá las operaciones relacionadas con la resta
+ * Esta clase definirï¿½ las operaciones relacionadas con la resta
  *
  * @author rober
  ** @version 1.0
@@ -13,14 +13,14 @@ public class Principal {
 
 	/**
 	 * 
-	 * @param args - Clase principal que irá llamando a las demas para realizar
+	 * @param args - Clase principal que irï¿½ llamando a las demas para realizar
 	 *             operaciones
 	 */
 	public static void main(String[] args) {
 
 		Scanner entrada = new Scanner(System.in);
 
-		System.out.println("¿Que tipo de operacion quieres realizar? Introduce suma, resta, multiplicacion o division");
+		System.out.println("ï¿½Que tipo de operacion quieres realizar? Introduce suma, resta, multiplicacion o division");
 		
 		//Entrada por teclado. Obligamos a que la palabra se vaya a minisculas
 		String operacion = entrada.nextLine().toLowerCase();
@@ -31,6 +31,10 @@ public class Principal {
 
 		case "suma":
 			System.out.println("es la suma");
+
+
+
+      
 			break;
 			
 			//Opciones de resta
