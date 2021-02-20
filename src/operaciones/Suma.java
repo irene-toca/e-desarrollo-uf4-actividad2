@@ -20,8 +20,8 @@ package operaciones;
  */
 public class Suma {	
 	static int acumulador = 0;
-	double resultado;
-	int solucion;
+	static double resultado;
+	static int solucion;
 	
 	
 	
@@ -39,7 +39,7 @@ public class Suma {
 	 * @return resultado      Nos devuelve  double como resultado  ya que es la  suma de dos numeros  reales  (num1, num2) que retornan
 	 * 
 	 */
-	public double suma2Reales(double num1, double num2) {
+	public static double suma2Reales(double num1, double num2) {
 		resultado = num1 + num2;
 		return resultado;
 	}
@@ -58,7 +58,7 @@ public class Suma {
 	 * @return solucion      Nos devuelve  int como solucion ya que es la  suma de dos numeros enteros  (num1, num2) que retornan
 	 * 
 	 */
-	public int suma2Enteros(int num1, int num2) {
+	public static int suma2Enteros(int num1, int num2) {
 		solucion = num1 + num2;
 		return solucion;
 		
@@ -79,7 +79,7 @@ public class Suma {
 	 *              reales  (num1, num2, num3) que retornan
 	 * 
 	 */
-	public double suma3Reales(double num1, double num2, double num3) {
+	public static double suma3Reales(double num1, double num2, double num3) {
 		resultado = num1 + num2 + num3;
 		return resultado;
 		
@@ -99,7 +99,7 @@ public class Suma {
 	 * 
 	 */
 
-	public int valorAcumulado(int num) {
+	public static int valorAcumulado(int num) {
 		//Suma.acumulador += num;
 		Suma.acumulador = Suma.acumulador + num;
 		return Suma.acumulador;
