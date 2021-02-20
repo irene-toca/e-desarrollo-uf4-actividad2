@@ -8,6 +8,7 @@ package operaciones;
 *
 */
 	public class Division {
+			
 		/**
 		 *En este metodo se llevaran a cavo los metodos relacionado con la division de dos numero
 		 * reales
@@ -46,8 +47,11 @@ package operaciones;
 		 * @param num1 numero real 
 		 * @return un double, la raiz de num1
 		 */
-		public static double raiz(double num1) {
+		public static double raizreal(double num1) {
 			return Math.sqrt(num1);
+			//divisdion;
+		
 		}
-
 	}
+
+
