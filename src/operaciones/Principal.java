@@ -106,6 +106,7 @@ public class Principal {
 				
 				solucion = suma1.valorAcumulado();
 				
+
 				System.out.println("FIN. El valor acumulado es : " + solucion);
 				break;
 	
@@ -239,6 +240,7 @@ public class Principal {
 			System.out.println("Pulse 4 para calcular la raiz cuadra da un número real");
 
 
+
 			// Entrada por teclado
 			int operacionDivision = entrada.nextInt();
 			
@@ -270,6 +272,7 @@ public class Principal {
 				num1Real = entrada.nextDouble();
 				System.out.println("El resultado es: " + Division.inversoreal(num1Real));
 				break;
+
 
 				// Pasamos una variable y llamamos al metodo raiz
 			

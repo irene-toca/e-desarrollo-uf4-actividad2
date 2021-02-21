@@ -90,6 +90,12 @@ public class Resta {
 		
 		System.out.println("Introduzca primer digito");
 		int acumulador = entrada.nextInt();
+		while (acumulador <= 0) {
+			System.out.println("Introduzca numero mayor que cero");
+			acumulador = entrada.nextInt();
+
+		}
+		
 		System.out.println(acumulador);
 
 		for (int i = 0; i < 2; i++) {
