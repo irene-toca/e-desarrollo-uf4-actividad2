@@ -102,20 +102,11 @@ public class Principal {
 				break;
 	
 			case 4:
-				System.out.println("\nCUARTO MÉTODO ACUMULANDO \nSe repetirá tres veces");
-				System.out.println("Introduce un número");
-				a1 = entrada.nextInt();
-				solucion = suma1.valorAcumulado(a1);
-				System.out.println("El valor acumulado es : " + solucion);
-	
-				System.out.println("Introduce otro número");
-				a1 = entrada.nextInt();
-				solucion = suma1.valorAcumulado(a1);
-				System.out.println("El valor acumulado es : " + solucion);
-	
-				System.out.println("Introduce el último número");
-				a1 = entrada.nextInt();
-				solucion = suma1.valorAcumulado(a1);
+				System.out.println("\nCUARTO MÉTODO ACUMULANDO");
+				
+				solucion = suma1.valorAcumulado();
+				
+
 				System.out.println("FIN. El valor acumulado es : " + solucion);
 				break;
 	
@@ -249,6 +240,7 @@ public class Principal {
 			System.out.println("Pulse 4 para calcular la raiz cuadra da un número real");
 
 
+
 			// Entrada por teclado
 			int operacionDivision = entrada.nextInt();
 			
@@ -280,6 +272,7 @@ public class Principal {
 				num1Real = entrada.nextDouble();
 				System.out.println("El resultado es: " + Division.inversoreal(num1Real));
 				break;
+
 
 				// Pasamos una variable y llamamos al metodo raiz
 			
