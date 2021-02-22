@@ -10,7 +10,7 @@ import operaciones.Suma;
 class RestaTest {
 
 	/**
-	 * Test para el método resta2Reales
+	 * Test para el mï¿½todo resta2Reales
 	 */
 	@Test
 	public void testResta2Reales() {
@@ -21,7 +21,7 @@ class RestaTest {
 	}
 	
 	/**
-	 * Test para el método resta2Reales llegando a un resultado menor a 0
+	 * Test para el mï¿½todo resta2Reales llegando a un resultado menor a 0
 	 */
 	@Test
 	public void testResta2RealesMenor0() {
@@ -32,7 +32,7 @@ class RestaTest {
 	}
 	
 	/**
-	 * Test para el método resta2Enteros
+	 * Test para el mï¿½todo resta2Enteros
 	 */
 	@Test
 	public void testResta2Enteros() {
@@ -43,7 +43,7 @@ class RestaTest {
 	}
 	
 	/**
-	 * Test para el método resta2Enteros lleganso a un resultado menor a 0
+	 * Test para el mï¿½todo resta2Enteros llegando a un resultado menor a 0
 	 */
 	@Test
 	public void testResta2EnterosMenor0() {
@@ -54,7 +54,7 @@ class RestaTest {
 	}
 	
 	/**
-	 * Test para el método resta3Reales
+	 * Test para el mï¿½todo resta3Reales
 	 */
 	@Test
 	public void testResta3Reales() {
@@ -65,7 +65,7 @@ class RestaTest {
 	}
 	
 	/**
-	 * Test para el método resta3Reales llegando a un resultado menor a 0
+	 * Test para el mï¿½todo resta3Reales llegando a un resultado menor a 0
 	 */
 	@Test
 	public void testResta3RealesMenor0() {
@@ -76,15 +76,13 @@ class RestaTest {
 	}
 	
 	/**
-	 * Test para el método restaAcumulado
+	 * Test para el mÃ©todo restaAcumulado
 	 */
 	@Test
 	public void testRestaAcumulado() {
-		Resta.restaAcumulado();
+		int resultado = Resta.restaAcumulado();
 		
-		// en este momento se abre la consola y nos pide los números necesarios 
-		// para ejecutar este método.
-		// Al finalizar el resultado es correcto y JUnit nos muestra todos los test como aprobados
+		assertTrue(resultado <= 0);
 	}
 
 }
