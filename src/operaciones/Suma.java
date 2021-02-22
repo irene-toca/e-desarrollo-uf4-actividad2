@@ -1,4 +1,7 @@
 package operaciones;
+
+import java.util.Scanner;
+
 /**
  * Esta clase implementara todos los metodos que estan relacionados con la sumas de la calculadora
  * @author irene  este es el nombre del autor 
@@ -22,6 +25,8 @@ public class Suma {
 	static int acumulador = 0;
 	static double resultado;
 	static int solucion;
+	static int num;
+	static Scanner scanner = new Scanner(System.in);
 	
 	
 	
@@ -99,9 +104,16 @@ public class Suma {
 	 * 
 	 */
 
-	public static int valorAcumulado(int num) {
-		//Suma.acumulador += num;
-		Suma.acumulador = Suma.acumulador + num;
+	public static int valorAcumulado() {
+		System.out.println("Este método se repetirá 3 veces");
+		for(int i = 1; i <= 3; i++) {
+			System.out.println("Introduce un número");
+			num = scanner.nextInt();
+			Suma.acumulador = Suma.acumulador + num;
+			//Suma.acumulador += num;
+		}
+		
+		
 		return Suma.acumulador;
 	}
 }
