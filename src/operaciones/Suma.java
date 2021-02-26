@@ -21,7 +21,7 @@ public class Suma {
 	public double resultado;
 	public int solucion;
 	public int num;
-	static double valorAcumulado = 0;
+	public static double valorAcumulado = 0;
 	
 	
 	
