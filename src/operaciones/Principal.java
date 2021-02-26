@@ -81,7 +81,6 @@ public class Principal {
 				System.out.println("Introduce otro número");
 				b1 = entrada.nextInt();
 				System.out.println(b1);
-	
 				solucion = suma1.suma2Enteros(a1, b1);
 				System.out.println("El resultado de la suma es: " + solucion);
 				System.out.println("\n***********************\n");
@@ -97,7 +96,6 @@ public class Principal {
 				System.out.println(b);
 				System.out.println("Introduce último número");
 				c = entrada.nextDouble();
-	
 				resultado = suma1.suma3Reales(a, b, c);
 				System.out.println("El resultado de la suma es: " + resultado);
 				System.out.println("\n***********************\n");
@@ -112,7 +110,6 @@ public class Principal {
 					a = entrada.nextDouble();
 					suma1.valorAcumulado(a);
 				}
-				
 				
 
 				System.out.println("FIN. El valor acumulado es : " + Suma.valorAcumulado);
@@ -172,7 +169,7 @@ public class Principal {
 			// Llamamos directamente a restaAcumulado de clase Resta donde realizaremos las
 			// operaciones
 			case 4:
-	
+				
 				Resta.restaAcumulado();
 	
 				break;
