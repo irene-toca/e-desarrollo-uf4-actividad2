@@ -22,7 +22,7 @@ import java.util.Scanner;
  * 
  */
 public class Suma {	
-	static int acumulador = 0;
+	public double n1;
 	static double resultado;
 	static int solucion;
 	static int num;
@@ -103,17 +103,18 @@ public class Suma {
 	 * @return Suma.acumulador Nos devuelve int el total del acumulador que retorna y es 9
 	 * 
 	 */
-
-	public static int valorAcumulado() {
-		System.out.println("Este método se repetirá 3 veces");
+	//Revisado por Pedro parece que tira pero dadle un vistazo
+	public static int valorAcumulado(double num1, double num2, double num3) {
 		for(int i = 1; i <= 3; i++) {
-			System.out.println("Introduce un número");
-			num = scanner.nextInt();
-			Suma.acumulador = Suma.acumulador + num;
-			//Suma.acumulador += num;
-		}
+			i=1;
+			resultado = num1;
+			i=2;
+			resultado = num1 + num2;
+			i=3;
+			resultado = num1 + num2 + num3;
+			}
 		
 		
-		return Suma.acumulador;
+		return (int) resultado;
 	}
 }
