@@ -22,14 +22,7 @@ import operaciones.Suma;
 	 * @since 20/02/2020
 	 */
  public class SumaTest {
-	 static public int acumulador = 0;
-		static double resultado;
-		static int solucion;
-		static int num;
-		static Scanner scanner = new Scanner(System.in);
-		
-		
-		/**
+	 	/**
 		 * Test de verificacion del metodo suma2Reales
 		 * tenemos que conseguir que nuestro resultado sea igual
 		 * al esperado por el sistema
@@ -142,9 +135,7 @@ import operaciones.Suma;
 	
 	public void TestvalorAcumulado () {
 
-		double resultado  = Suma.valorAcumulado();
-
-		
+		double resultado  = Suma.valorAcumulado(1,2,3);
 		double esperado = 6;
 			assertEquals(esperado, resultado);
 			
@@ -157,8 +148,7 @@ import operaciones.Suma;
 	 */
 	@Test
 	public void TestvalorAcumulado0 () {
-		double resultado  = Suma.valorAcumulado();
-
+		double resultado  = Suma.valorAcumulado(0,0,0);
 		double esperado = 0;
 			assertEquals(esperado, resultado);
 			
@@ -168,12 +158,11 @@ import operaciones.Suma;
 	 * comprobando el caso de resultado negativo y que los
 	 * sumandos sean negativos
 	 */
-	/*@Test
-	public void TestvalorAcumuladonegativo () {
-			double resultado  = Suma.valorAcumulado();
-
-			double esperado = -6;
-				assertEquals(esperado, resultado);
-				
-			}*/
- }
+ @Test
+	public void TestvalorAcumuladonegativos () {
+		double resultado  = Suma.valorAcumulado(-1,-3,3);
+		double esperado = -1;
+			assertEquals(esperado, resultado);
+			
+		}
+}
