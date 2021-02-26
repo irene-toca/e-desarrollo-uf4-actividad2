@@ -79,7 +79,6 @@ public class Principal {
 				System.out.println("Introduce otro número");
 				b1 = entrada.nextInt();
 				System.out.println(b1);
-	
 				solucion = suma1.suma2Enteros(a1, b1);
 				System.out.println("El resultado de la suma es: " + solucion);
 				System.out.println("\n***********************\n");
@@ -95,7 +94,6 @@ public class Principal {
 				System.out.println(b);
 				System.out.println("Introduce último número");
 				c = entrada.nextDouble();
-	
 				resultado = suma1.suma3Reales(a, b, c);
 				System.out.println("El resultado de la suma es: " + resultado);
 				System.out.println("\n***********************\n");
@@ -103,8 +101,15 @@ public class Principal {
 	
 			case 4:
 				System.out.println("\nCUARTO MÉTODO ACUMULANDO");
-				
-				solucion = suma1.valorAcumulado();
+				System.out.println("Introduce un número");
+				a = entrada.nextDouble();
+				System.out.println("El valor acumulado es : " + a);
+				System.out.println("Introduce otro número");
+				b = entrada.nextDouble();
+				System.out.println("El valor acumulado es : " + (b+a));
+				System.out.println("Introduce último número");
+				c = entrada.nextDouble();
+				solucion = suma1.valorAcumulado(a,b,c);
 				
 
 				System.out.println("FIN. El valor acumulado es : " + solucion);
@@ -164,7 +169,7 @@ public class Principal {
 			// Llamamos directamente a restaAcumulado de clase Resta donde realizaremos las
 			// operaciones
 			case 4:
-	
+				
 				Resta.restaAcumulado();
 	
 				break;
