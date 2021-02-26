@@ -22,7 +22,7 @@ public class Suma {
 	public int solucion;
 	public int num;
 	public static double valorAcumulado = 0;
-	
+
 	
 	
 	
@@ -84,8 +84,9 @@ public class Suma {
 	 * @param  num valor que se añadirá a la propiedad static valorAcumulado
 	 * 
 	 */
+
 	public void valorAcumulado(double num) {
 		Suma.valorAcumulado += num;
-		
+
 	}
 }
