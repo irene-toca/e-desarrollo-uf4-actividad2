@@ -25,7 +25,7 @@ public class Principal {
 		int b1;
 		double resultado;
 		int solucion;
-		Suma suma1 = new Suma();
+		double solucionDouble = 0;
 		double num1Real;
 		double num2Real;
 	
@@ -42,12 +42,14 @@ public class Principal {
 		switch (operacion) {
 	
 		case "suma":
+
+			Suma suma1 = new Suma();
 			// Otro menú para seleccionar las operaciones de la Suma
 			System.out.println("Operación Suma");
 			System.out.println("Pulse 1 para sumar dos números reales ");
 			System.out.println("Pulse 2 para sumar dos números enteros ");
 			System.out.println("Pulse 3 para sumar tres números reales");
-			System.out.println("Pulse 4 para sumar el valor acumulado de tres números");
+			System.out.println("Pulse 4 para sumar el valor acumulado");
 	
 			// Entrada por teclado
 			int operacionSuma = entrada.nextInt();
@@ -103,11 +105,17 @@ public class Principal {
 	
 			case 4:
 				System.out.println("\nCUARTO MÉTODO ACUMULANDO");
+				System.out.println("¿Cuántas veces quieres repetir el proceso?");
+				a1 = entrada.nextInt();
+				for(int i = 1; i <= a1; i++) {
+					System.out.println("Ingresa un valor para acumular");
+					a = entrada.nextDouble();
+					suma1.valorAcumulado(a);
+				}
 				
-				solucion = suma1.valorAcumulado();
 				
 
-				System.out.println("FIN. El valor acumulado es : " + solucion);
+				System.out.println("FIN. El valor acumulado es : " + Suma.valorAcumulado);
 				break;
 	
 			default:
