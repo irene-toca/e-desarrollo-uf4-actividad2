@@ -88,4 +88,11 @@ public class Suma {
 		Suma.valorAcumulado += num;
 		
 	}
+	
+	/**
+	 * Este método reinicia a 0 el valor de static valor Acumulado
+	 */
+	public void resetValorAcumulado() {
+		Suma.valorAcumulado = 0;
+	}
 }
