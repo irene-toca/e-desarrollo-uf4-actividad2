@@ -82,37 +82,21 @@ public class Resta {
 	 * @param resultadoResta - Es el resultado obtenido de restar al acumulador el
 	 *                       numArestar.
 	 */
-	public static int restaAcumulado() {
+public static double restaAcumulado(double num1, double num2, double num3) {
 		
-		
-		entrada = new Scanner(System.in);
-		int resultadoResta=0;
-
-		
-		System.out.println("Introduzca primer digito");
-		int acumulador = entrada.nextInt();
-		while (acumulador <= 0) {
-			System.out.println("Introduzca numero mayor que cero");
-			acumulador = entrada.nextInt();
-
+		double resultadoResta=0;
+		for(int i=0;i<2;i++) {
+			
+			i=0;
+			resultadoResta=num1;
+			i=1;
+			resultadoResta=num1-num2;
+			i=2;
+			resultadoResta=num1-num2-num3;
+			
 		}
 		
-		System.out.println(acumulador);
-
-		for (int i = 0; i < 2; i++) {
-			System.out.println("Introduzca digito a restar");
-			int numArestar = entrada.nextInt();
-			resultadoResta = acumulador - numArestar;
-			acumulador = resultadoResta;
-			System.out.println("El resultado de la operacion es: " + resultadoResta);
-			if (resultadoResta <= 0) {
-				i = 2;
-
-			} else {
-				i = 0;
-			}
-
-		}
+		
 		
 		
 		return resultadoResta;

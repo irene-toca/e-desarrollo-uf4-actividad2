@@ -128,7 +128,7 @@ public class Principal {
 			System.out.println("Pulse 1 para restar dos números reales");
 			System.out.println("Pulse 2 para restar dos números enteros");
 			System.out.println("Pulse 3 para restar tres números reales");
-			System.out.println("Pulse 4 para ir restando números hasta llegar a 0 o inferior");
+			System.out.println("Pulse 4 para restar al primer numero los dos numeros siguientes introducidos");
 	
 			// Entrada por teclado
 			int operacionResta = entrada.nextInt();
@@ -169,8 +169,15 @@ public class Principal {
 			// Llamamos directamente a restaAcumulado de clase Resta donde realizaremos las
 			// operaciones
 			case 4:
+				System.out.println("Introduzca primer digito");
+				double num1 = entrada.nextDouble();
+				System.out.println("Introduzca segundo digito");
+				double num2 = entrada.nextDouble();
+				System.out.println("Introduzca tercer digito");
+				double num3 = entrada.nextDouble();
 				
-				Resta.restaAcumulado();
+				System.out.println("El resultado de restar "+num1+" menos "+num2+" menos "+num3+" es igual a "+Resta.restaAcumulado(num1, num2, num3));
+				
 	
 				break;
 	
