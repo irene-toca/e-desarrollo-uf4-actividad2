@@ -12,7 +12,7 @@ import operaciones.Division;
 public class DivisionTest {
 
 	/**
-	 * Comprobamos que el método diviDIsion2reales, en efecto, diDIvide dos reales.
+	 * Comprobamos que el método division2reales, en efecto, divide dos reales.
 	 */
 	@Test
 	public void testdividision2reales() {
