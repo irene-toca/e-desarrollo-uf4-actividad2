@@ -1,7 +1,7 @@
 package tests;
 
 /**
- * @autor Félix Cartón
+ * @autor Fï¿½lix Cartï¿½n
  */
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
@@ -12,18 +12,31 @@ import operaciones.Division;
 public class DivisionTest {
 
 	/**
-	 * Comprobamos que el método diviDIsion2reales, en efecto, diDIvide dos reales.
+	 * Comprobamos que el mï¿½todo diviDIsion2reales, en efecto, diDIvide dos reales.
 	 */
 	@Test
-	public void testdividision2reales() {
-		double resultado = Division.dividision2reales(1.2, 2);
-		double esperado = 0.6;
+	public void testdividision2realescero() {
+		double resultado = Division.dividision2reales(1.2, 0);
+		double esperado = 0;
 
 		assertEquals(esperado, resultado);
 	}
+	@Test
+	public void testdividision2reales() {
+		double resultado = Division.dividision2reales(1.2,2);
+		double esperado = 0.6;
 
+				assertEquals(esperado, resultado);
+	}
+	@Test
+	public void testdividision2realesnegativos() {
+		double resultado = Division.dividision2reales(-1.4,2);
+		double esperado = -0.7;
+
+				assertEquals(esperado, resultado);
+	}
 	/**
-	 * Comprobamos que el método division2enteros, en efecto, divide dos enteros.
+	 * Comprobamos que el mï¿½todo division2enteros, en efecto, divide dos enteros.
 	 */
 	@Test
 	public void testdivision2enteros() {
@@ -32,9 +45,22 @@ public class DivisionTest {
 
 		assertEquals(esperado, resultado);
 	}
+	@Test
+	public void testdivision2enteroscero() {
+		double resultado = Division.division2enteros(6, 0);
+		double esperado = 0;
 
+		assertEquals(esperado, resultado);
+	}
+	@Test
+	public void testdivision2enterosnegativos() {
+		double resultado = Division.division2enteros(6, -3);
+		double esperado = -2;
+
+		assertEquals(esperado, resultado);
+	}
 	/**
-	 * Comprobamos que el método inversoreal, en efecto, realiza la operación.
+	 * Comprobamos que el mï¿½todo inversoreal, en efecto, realiza la operaciï¿½n.
 	 */
 	@Test
 	public void testinversoreal() {
@@ -43,34 +69,20 @@ public class DivisionTest {
 
 		assertEquals(esperado, resultado);
 	}
-	/**
-	 * El test comprueba que los métodos lancen una excepción al dividir entre cero.
-	 */
 	@Test
-	public void testdivisionentrecero() {
-		Exception exception1 = assertThrows(ArithmeticException.class, () -> {
-			Division.division2reales(1, 0);
-		});
-		String expectedMessage = "/ by zero";
-		String actualMessage1 = exception.getMessage();
+	public void testinversorealnegativo() {
+		double resultado = Division.inversoreal(-10);
+		double esperado = -0.1;
 
-		Exception exception2 = assertThrows(ArithmeticException.class, () -> {
-			Division.division2enteros(3, 0);
-		});
-		String actualMessage2 = exception.getMessage();
-
-		Exception exception3 = assertThrows(ArithmeticException.class, () -> {
-			Division.inversoreal(0);
-		});
-		String actualMessage3 = exception.getMessage();
-		assertTrue(actualMessage1.contains(expectedMessage));
-		assertTrue(actualMessage2.contains(expectedMessage));
-		assertTrue(actualMessage3.contains(expectedMessage));
+		assertEquals(esperado, resultado);
 	}
+	@Test
+	public void testinversorealcero() {
+		double resultado = Division.inversoreal(0);
+		double esperado = 0;
 
-	/**
-	 * Comprobamos que el método raizreal, en efecto, realiza la operación.
-	 */
+		assertEquals(esperado, resultado);
+	}
 	@Test
 	public void testraizreal() {
 		double resultado = Division.raizreal(4);
