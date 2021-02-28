@@ -20,15 +20,7 @@ public class Resta {
 	public static double valorAcumulado = 100;
         
 
-	/**
-	 * Variable de tipo double para restar los dos numeros reales
-	 */
-	double resultado;
-
-	/**
-	 * Variable de tipo integer para restar los numeros enteros
-	 */
-	int solucion;
+	
 	
 	/**
 	 * Variable entrada para obtener los valores del Scanner por consola
@@ -41,7 +33,7 @@ public class Resta {
 	 *
 	 * @param num1      - Valor introducido por el usuario
 	 * @param num2      - Valor introducido por el usuario
-	 * @param resultado - Resultado de restar num1 menos num2
+	 * 
 	 */
 	public static double resta2Reales(double num1, double num2) {
 
@@ -53,7 +45,7 @@ public class Resta {
 	 *
 	 * @param num1     - Valor introducido por el usuario
 	 * @param num2     - Valor introducido por el usuario
-	 * @param solucion - Resultado de restar num1 menos num2
+	 * 
 	 */
 	public static int resta2Enteros(int num1, int num2) {
 
@@ -66,7 +58,7 @@ public class Resta {
 	 * @param num1     - Valor introducido por el usuario.
 	 * @param num2     - Valor introducido por el usuario.
 	 * @param num3     - Valor introducido por el usuario.
-	 * @param solucion - Resultado de restar num1 menos num2 menos num3.
+	 * 
 	 */
 	public static double resta3Reales(double num1, double num2, double num3) {
 
@@ -75,7 +67,7 @@ public class Resta {
 
 	/**
 	 * En este metodo ire restando numeros al valorAcumulado
-	 *
+	 * @param num       - Valor que ira restando el valor fijado
 	 
 	 */
         public void valorAcumulado(double num) {
@@ -85,6 +77,7 @@ public class Resta {
 	
 	/**
 	 * Este metodo pone el valor acumulado al numero que introduzcamos
+         * @param num       - Valor que fijaremos para ir restando los demas numeros
 	 */
 	public void setValorAcumulado(double num) {
 		Resta.valorAcumulado = num;
