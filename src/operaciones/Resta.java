@@ -33,11 +33,12 @@ public class Resta {
 	 *
 	 * @param num1      - Valor introducido por el usuario
 	 * @param num2      - Valor introducido por el usuario
-	 * 
+	 * @return resultado - Este es el resultado de la resta
 	 */
 	public static double resta2Reales(double num1, double num2) {
+		double resultado = num1 - num2;
 
-		return (num1 - num2);
+		return resultado;
 	}
 
 	/**
@@ -45,11 +46,12 @@ public class Resta {
 	 *
 	 * @param num1     - Valor introducido por el usuario
 	 * @param num2     - Valor introducido por el usuario
+	 * @return resultado - Este es el resultado de la resta
 	 * 
 	 */
 	public static int resta2Enteros(int num1, int num2) {
-
-		return (num1 - num2);
+		int resultado = num1 - num2;
+		return resultado;
 	}
 
 	/**
@@ -58,11 +60,12 @@ public class Resta {
 	 * @param num1     - Valor introducido por el usuario.
 	 * @param num2     - Valor introducido por el usuario.
 	 * @param num3     - Valor introducido por el usuario.
+	 * @return resultado - Este es el resultado de la resta
 	 * 
 	 */
 	public static double resta3Reales(double num1, double num2, double num3) {
-
-		return (num1 - num2 - num3);
+		double resultado = num1 - num2 -num3;
+		return resultado;
 	}
 
 	/**
