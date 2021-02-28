@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 *En este metodo se llevaran a cavo los metodos relacionado con el conciente entre dos numero.
 *
 *@version 1.0
-*@autho Pedro Murillo
+*@author Pedro Murillo
 *@since 14/02/2020
 *
 */
