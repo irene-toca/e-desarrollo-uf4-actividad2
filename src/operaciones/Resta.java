@@ -14,9 +14,11 @@ public class Resta {
 	
 
 	/**
-	 * Usando la variable entera acumuLador iremos restando numeros
+	 * Usando la variable double acumuLador iremos restando numeros,
+         * siendo el primero el numero a restar por los siguientes
 	 */
-	static int acumuLador = 0;
+	public static double valorAcumulado = 100;
+        
 
 	/**
 	 * Variable de tipo double para restar los dos numeros reales
@@ -72,51 +74,20 @@ public class Resta {
 	}
 
 	/**
-	 * En este metodo ire restando variables de tipo entero hasta obtener un
-	 * resultado
+	 * En este metodo ire restando numeros al valorAcumulado
 	 *
-	 * @param acumulador     - Iremos restando los numeros hasta llegar a 0. Cuando
-	 *                       llegue a 0 acaba el bucle.
-	 * @param numArestar     - Valor introducido por el usuario que ira restando al
-	 *                       acumulador.
-	 * @param resultadoResta - Es el resultado obtenido de restar al acumulador el
-	 *                       numArestar.
+	 
 	 */
-	public static int restaAcumulado() {
-		
-		
-		entrada = new Scanner(System.in);
-		int resultadoResta=0;
+        public void valorAcumulado(double num) {
+		Resta.valorAcumulado-=num ;
 
-		
-		System.out.println("Introduzca primer digito");
-		int acumulador = entrada.nextInt();
-		while (acumulador <= 0) {
-			System.out.println("Introduzca numero mayor que cero");
-			acumulador = entrada.nextInt();
-
-		}
-		
-		System.out.println(acumulador);
-
-		for (int i = 0; i < 2; i++) {
-			System.out.println("Introduzca digito a restar");
-			int numArestar = entrada.nextInt();
-			resultadoResta = acumulador - numArestar;
-			acumulador = resultadoResta;
-			System.out.println("El resultado de la operacion es: " + resultadoResta);
-			if (resultadoResta <= 0) {
-				i = 2;
-
-			} else {
-				i = 0;
-			}
-
-		}
-		
-		
-		return resultadoResta;
-
+	}
+	
+	/**
+	 * Este metodo pone el valor acumulado al numero que introduzcamos
+	 */
+	public void setValorAcumulado(double num) {
+		Resta.valorAcumulado = num;
 	}
 
 }

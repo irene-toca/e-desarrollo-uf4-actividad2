@@ -1,4 +1,7 @@
 package operaciones;
+
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
 /**
 *En este metodo se llevaran a cavo los metodos relacionado con el conciente entre dos numero.
 *
@@ -7,8 +10,14 @@ package operaciones;
 *@since 14/02/2020
 *
 */
+
+
+	
 	public class Division {
-			
+		private static String resultado;
+		
+		
+		
 		/**
 		 *En este metodo se llevaran a cavo los metodos relacionado con la division de dos numero
 		 * reales
@@ -17,7 +26,12 @@ package operaciones;
 		 * @return un double, division (num1, num2).
 		 */
 		public static double dividision2reales(double num1, double num2) {
+			if (num2==0) {
+		System.out.println("No puedes dividir entre 0 mantecas");
+			return 0;
+			}
 			return num1 / num2;
+			
 		}
 
 		/**
@@ -28,7 +42,12 @@ package operaciones;
 		 * @return un integer, deivision de (num1 entre num2).
 		 */
 		public static int division2enteros(int num1, int num2) {
+			if (num2==0) {
+		System.out.println("No puedes dividir entre 0 mantecas");
+			return 0;
+					}
 			return num1 / num2;
+			
 		}
 
 		/**
@@ -38,7 +57,12 @@ package operaciones;
 		 * @return un double, inverso de num1
 		 */
 		public static double inversoreal(double num1) {
+			if (num1==0) {
+				System.out.println("No puedes dividir entre 0 mantecas");
+				return 0;
+					}
 			return 1/num1;
+			
 		}
 
 		/**
