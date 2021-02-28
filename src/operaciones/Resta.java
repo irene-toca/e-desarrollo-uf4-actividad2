@@ -70,7 +70,7 @@ public class Resta {
 	 * @param num       - Valor que ira restando el valor fijado
 	 
 	 */
-        public void valorAcumulado(double num) {
+        public static void valorAcumulado(double num) {
 		Resta.valorAcumulado-=num ;
 
 	}
@@ -79,7 +79,7 @@ public class Resta {
 	 * Este metodo pone el valor acumulado al numero que introduzcamos
          * @param num       - Valor que fijaremos para ir restando los demas numeros
 	 */
-	public void setValorAcumulado(double num) {
+	public static void setValorAcumulado(double num) {
 		Resta.valorAcumulado = num;
 	}
 
